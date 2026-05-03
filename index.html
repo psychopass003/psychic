@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next-Gen Code & AI | My Portfolio</title>
+    <style>
+        /* Base Styles & Dark Theme */
+        :root {
+            --bg-color: #0b0f19;
+            --surface-color: #1a202c;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-blue: #38bdf8;
+            --accent-purple: #c084fc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Typography & Layout */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 100px 0 60px;
+            text-align: center;
+            border-bottom: 1px solid #2d3748;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Mission Section */
+        .mission {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .mission p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--text-muted);
+        }
+
+        /* Roadmap Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 0 80px;
+        }
+
+        .card {
+            background-color: var(--surface-color);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #2d3748;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            border-color: var(--accent-blue);
+        }
+
+        .card h3 {
+            color: var(--accent-blue);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .code-font {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--accent-purple);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #2d3748;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Architecting the Future of Code</h1>
+            <p class="tagline">I am building next-generation programming languages, AI-driven applications, and hyper-efficient web ecosystems.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="mission">
+            <h2>My Vision</h2>
+            <p>The tools we use to build software today are just the beginning. My goal is to create new, highly optimized programming languages from the ground up, and integrate artificial intelligence natively into the development process. By rethinking syntax, compilation, and execution, I aim to make software development faster, smarter, and infinitely more capable than existing paradigms.</p>
+        </section>
+
+        <section class="roadmap">
+            <h2 style="text-align: center;">The Roadmap</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. New Programming Language</h3>
+                    <p>Designing a syntax that bridges human intuition and machine efficiency. This language will focus on speed, safety, and modern concurrency, leaving legacy constraints behind.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>2. AI Compiler Integration</h3>
+                    <p>Building an AI engine that doesn't just autocomplete code, but actively optimizes the abstract syntax tree (<span class="code-font">AST</span>) to drastically reduce runtime and memory usage.</p>
+                </div>
+
+                <div class="card">
+                    <h3>3. Next-Gen App Ecosystem</h3>
+                    <p>Developing native applications and web platforms exclusively built on top of the new language to prove its dominance in speed and scalability.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026. Built from scratch. Hosted on GitHub Pages.</p>
+            <p style="margin-top: 10px;">Status: <span style="color: #4ade80;">System Initialization...</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
